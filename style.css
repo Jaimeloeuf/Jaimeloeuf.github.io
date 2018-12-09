@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Catamaran:400,800');
-/* @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700'); */
 
 * {
 	font-family: 'Catamaran', sans-serif;
@@ -17,7 +16,6 @@ a, a:link, a:visited, a:hover, a:active {
 	1fr 4fr 1fr;
 	grid-template-rows:
 	0.7fr 0.2fr 1fr auto 2fr 1fr;
-	/* gap: 1em; */
 	grid-template-areas:
 		"title title title"
 		"pic nav-bar contact-me"
@@ -33,11 +31,6 @@ a, a:link, a:visited, a:hover, a:active {
 	margin: auto;
 	margin-bottom: 0.5em;
 	color: #f46bb1;
-	/* background:
-	linear-gradient(140deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.07) 43%, transparent 44%, transparent 100%),
-	linear-gradient(105deg, transparent 0%, transparent 40%, rgba(0, 0, 0, 0.06) 41%, rgba(0, 0, 0, 0.07) 76%, transparent 77%, transparent 100%),
-	linear-gradient(to right, #d89ca4, #e27b7e); */
-	/* font-family: 'Montserrat', Helvetica, sans-serif; */
 }
 
 img {
