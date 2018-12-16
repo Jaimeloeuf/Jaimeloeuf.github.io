@@ -1,73 +1,64 @@
 @import url('https://fonts.googleapis.com/css?family=Catamaran:400,800');
-/* @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700'); */
 
 * {
 	font-family: 'Catamaran', sans-serif;
+	font-size: 1em;
+}
+
+a, a:link, a:visited, a:hover, a:active {
+	color: #7b7b7b;
+	text-decoration: none;
 }
 
 .grid-container {
 	display: grid;
 	grid-template-columns:
 	1fr 4fr 1fr;
-	grid-template-rows:
-	0.4fr 0.2fr 0.4fr 0.4fr auto 2fr 1fr;
-	gap: 0px;
+	grid-template-rows: repeat(7, auto);
 	grid-template-areas:
 		"title title title"
-		"picture nav-bar contact-me"
-		"picture work-experiences contact-me"
-		"picture acadaemics contact-me"
-		"picture skill-set contact-me"
+		"pic nav-bar contact-me"
+		"pic work-exp contact-me"
+		"pic acadaemics contact-me"
+		"pic skill-set contact-me"
 		". projects ."
 		". footer .";
 }
 
+.title {
+	font-size: 1.6em;
+	grid-area: title;
+	margin: auto;
+	margin-top: 2.4em;
+	margin-bottom: 0.5em;
+	color: #f46bb1;
+}
+
 img {
-	grid-area: picture;
-	max-width: 95%;
+	grid-area: pic;
+	max-width: 4.5cm;
     max-height: 100%;
 }
 
-.contact-me {
+.contact-me { 
 	grid-area: contact-me;
-}
-
-.title {
-	grid-area: title;
-	margin: auto;
-	margin-bottom: 0.5em;
-	/* background:
-	linear-gradient(140deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.07) 43%, transparent 44%, transparent 100%),
-	linear-gradient(105deg, transparent 0%, transparent 40%, rgba(0, 0, 0, 0.06) 41%, rgba(0, 0, 0, 0.07) 76%, transparent 77%, transparent 100%),
-	linear-gradient(to right, #d89ca4, #e27b7e); */
-	/* font-family: 'Montserrat', Helvetica, sans-serif; */
-	color: #f46bb1;
+	margin-bottom: 2em;
 }
 
 .nav-bar {
 	grid-area: nav-bar;
 	margin: auto;
 	margin-top: 0px;
+	overflow: initial;
 }
 
-.work-experiences {
-	grid-area: work-experiences;
-	margin-left: 2em;
-}
+.work-experiences { grid-area: work-exp; }
+.acadaemics { grid-area: acadaemics; }
+.skill-set { grid-area: skill-set; }
+.projects { grid-area: projects; }
 
-.acadaemics {
-	grid-area: acadaemics;
-	margin-left: 2em;
-}
-
-.skill-set {
-	grid-area: skill-set;
-	margin-left: 2em;
-}
-
-.projects {
-	grid-area: projects;
-	margin-left: 2em;
+.projects > a {
+	color: #bbb; /* Change the color to a darker shade */
 }
 
 .footer {
@@ -75,19 +66,36 @@ img {
 	margin-left: 3em;
 }
 
-button, a, a:link, a:visited, a:hover, a:active {
-	color: #7b7b7b;
-	text-decoration: none;
+/* Overwrite all changes that you dont want! */
+@media screen and (max-width: 70em) {
+	/* Resize image and Resize to 2 columns */
+	img { max-width: 60%; }
+	.grid-container {
+		/* grid-template-columns: 1fr 3fr; */
+		grid-template-columns: auto auto;
+		grid-template-areas:
+			"title ."
+			"nav-bar contact-me"
+			"about-me contact-me"
+			"skill-set pic"
+			"projects ."
+			"footer .";
+	}
 }
 
-button {
-	background-color: white;
-	margin: 0px;
-	border: none;
-}
-
-.projects > a {
-	color: #bbb; /* Change the color to a darker shade */
+@media screen and (max-width: 58em) {
+	/* Hide image and contact-me icons. Resize to 1 column */
+	img, .contact-me { display: none; }
+	.grid-container {
+		grid-template-columns: auto;
+		grid-template-areas:
+		"title"
+		"nav-bar"
+		"about-me"
+		"skill-set"
+		"projects"
+		"footer";
+	}
 }
 
 /* 
