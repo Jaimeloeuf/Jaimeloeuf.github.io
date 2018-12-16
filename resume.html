@@ -26,9 +26,28 @@
 	<img src="imgs/profile.png" alt="Me!">
 
 	<div class="contact-me">
-		<a href="#" class='far fa-address-card' style='font-size: 2em; font-weight: 200;'> Contact</a><br><br>
-		<a href="https://github.com/Jaimeloeuf" class='fab fa-github' style='font-size: 2em; font-weight: 200;'> GitHub</a><br><br>
-		<a href="mailto:jaimeloeuf@gmail.com" class='fas fa-envelope' style='font-size: 2em; font-weight: 200;'> Email</a>
+		<a href="#" class='far fa-address-card' id="num" onclick="
+			if (document.getElementById('num').innerHTML === ' 94263687')
+				reset();
+			else {
+				setChanges();
+				setTimeout(() => reset(), 5000);
+			}
+			function setChanges() { // Change the icon out to my number
+				document.getElementById('num').className = ''; // Remove the contact icon
+				document.getElementById('num').innerHTML = ' 94263687';
+			}
+			function reset() { // Resets back to original layout
+				document.getElementById('num').className = 'far fa-address-card'; // Add the contact icon back
+				document.getElementById('num').innerHTML = ' Contact';
+			}
+		" style='font-size: 1.8em; font-weight: 200;'> Contact</a><br><br>
+		<a href="https://github.com/Jaimeloeuf" class='fab fa-github' style='font-size: 1.9em; font-weight: 200;'> GitHub</a><br><br>
+		<a href="mailto:jaimeloeuf@gmail.com" class='fas fa-envelope' id="email" onclick="
+			document.getElementById('email').className = ''; // Remove the email icon
+			document.getElementById('email').style.fontSize = '1.1em';
+			document.getElementById('email').innerHTML='jaimeloeuf@gmail.com';
+		" style='font-size: 2em; font-weight: 200;'> Email</a>
 	</div>
 
 	<div class="work-experiences">
@@ -41,7 +60,7 @@
 	<div class="acadaemics">
 		<pre>
 			<span style="font-weight: bolder;">Acadaemics / CCA acheivements</span>
-			<span style="font-weight: bold;">Sch..</span>
+			<span style="font-weight: bold;">In Temasek Polytechnic</span>
 				2 Distinctions, 4 As
 				Selected by the school to join the <i>Enhanced Engineering Skills Programme</i> to
 				further develop my skills in 'Electronic Product Design'
