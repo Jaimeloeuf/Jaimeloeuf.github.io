@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Catamaran:400,800');
 
+body {
+	max-width: 95vw;
+}
+
 * {
 	font-family: 'Catamaran', sans-serif;
 	font-size: 1em;
