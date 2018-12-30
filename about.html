@@ -10,14 +10,15 @@
 
 	<!-- Custom styles for this template -->
 	<link rel="stylesheet" href="styles/about.css">
-	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
+	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU'
+	 crossorigin='anonymous'>
 </head>
 
 <body id="top" class="grid-container">
-	<h3 class="title">About me and my personal details/lyfe!</h3>
+	<h3 class="title">My personal details / lyfe!</h3>
 
 	<div class="nav-bar">
-		<a href="/">About</a>
+		<a href="#">About</a>
 		<a href="#">Resume/Skill-set</a>
 		<a href="#projects">Projects</a>
 		<a href="#">Contact Me</a>
@@ -41,29 +42,40 @@
 				document.getElementById('num').className = 'far fa-address-card'; // Add the contact icon back
 				document.getElementById('num').innerHTML = ' Contact';
 			}
-		" style='font-size: 1.8em; font-weight: 200;'> Contact</a><br><br>
+		"
+		 style='font-size: 1.8em; font-weight: 200;'> Contact</a><br><br>
 		<a href="https://github.com/Jaimeloeuf" class='fab fa-github' style='font-size: 1.9em; font-weight: 200;'> GitHub</a><br><br>
 		<a href="mailto:jaimeloeuf@gmail.com" class='fas fa-envelope' id="email" onclick="
 			document.getElementById('email').className = ''; // Remove the email icon
 			document.getElementById('email').style.fontSize = '1.1em';
 			document.getElementById('email').innerHTML='jaimeloeuf@gmail.com';
-		" style='font-size: 2em; font-weight: 200;'> Email</a>
+		"
+		 style='font-size: 2em; font-weight: 200;'> Email</a>
 	</div>
 
 
+	<!-- Add my personal stuff like stories blog? Insta and stuff also can -->
 	<div class="about-me">
 		<pre>
-			<!-- Add my personal stuff like stories blog? Insta and stuff also can -->
-			<span style="font-weight: bold;">Electronics:</span>
-				- Familiar with using most lab equipments such as
-				  analog/digital oscilloscopes.
-				- Specialise in mixed circuit designs and logic controllers.
-				- Familiar with Power supply design and Signal Conditioning
-				  techniques and circuit design.
-				- Familiar with Amplifier designs and really interested
-				  in these, I have a project based on this as well
-				  where I designed and created my own Speaker Amp.
-				- Basic knowledge of FPGAs.
+			<span style="font-weight: bold;">About me</span>
+				- I was born and raised in Singapore in a Chinese family.
+
+
+			<!-- Perhaps for the below portions, I should publish all these articles to github-->
+			<!-- In the guthub for the review thing, remember to add in the name of the book and the ISBN -->
+			<span style="font-weight: bold;">Book summary / review</span>
+				- <a href="#">The Business Book</a>
+
+			<span style="font-weight: bold;">Recommended Book Lists</span>
+				- <a href="#">The criminal biology</a>
+					- A book that talks about some uncomfortable yet scientifically provable ideas.
+				- <a href="#">The Business Book</a>
+				- <a href="#">The liberal investing</a>
+				- <a href="#">F.U Money</a>
+					- Life changing book on the success mindset by Dan Lok.
+
+			<span style="font-weight: bold;">Video reports</span>
+				- <a href="#">How to remember what you learned</a>
 		</pre>
 	</div>
 

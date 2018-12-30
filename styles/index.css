@@ -21,7 +21,7 @@ a, a:link, a:visited, a:hover, a:active {
 	grid-template-columns: repeat(3, auto);
 	grid-template-rows: repeat(6, auto);
 	grid-template-areas:
-		"title title title"
+		". title ."
 		"pic nav-bar contact-me"
 		"pic about-me contact-me"
 		"pic skill-set contact-me"

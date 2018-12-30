@@ -21,11 +21,11 @@ a, a:link, a:visited, a:hover, a:active {
 	grid-template-columns: repeat(3, auto);
 	grid-template-rows: repeat(6, auto);
 	grid-template-areas:
-		"title title title"
+		". title ."
 		"pic nav-bar contact-me"
 		"pic about-me contact-me"
-		"pic skill-set contact-me"
-		". projects ."
+		"pic about-me contact-me"
+		". about-me ."
 		". footer .";
 }
 
@@ -76,8 +76,8 @@ img {
 			"title ."
 			"nav-bar contact-me"
 			"about-me contact-me"
-			"skill-set pic"
-			"projects ."
+			"about-me pic"
+			"about-me ."
 			"footer .";
 	}
 }
@@ -91,8 +91,6 @@ img {
 		"title"
 		"nav-bar"
 		"about-me"
-		"skill-set"
-		"projects"
 		"footer";
 	}
 }
