@@ -1,0 +1,110 @@
+<html lang="en">
+
+<head>
+	<title>loeuf's portfolio</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="JJJ's portfolio website">
+	<meta name="author" content="JaimeLoeuf">
+
+	<!-- Custom styles for this template -->
+	<link rel="stylesheet" href="styles/resume.css">
+	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
+</head>
+
+<body id="top" class="grid-container">
+	<h3 class="title">My Projects!</h3>
+
+	<div class="nav-bar">
+		<a href="/index.html">Home</a>
+		<a href="/about.html">About</a>
+		<a href="/resume.html">Resume/Skill-set</a>
+		<a href="#">Projects</a>
+		<a href="#">Contact Me</a>
+	</div>
+
+	<img src="imgs/profile.png" alt="Me!">
+
+	<div class="contact-me">
+		<a href="#" class='far fa-address-card' id="num" onclick="
+			if (document.getElementById('num').innerHTML === ' 94263687')
+				reset();
+			else {
+				setChanges();
+				setTimeout(() => reset(), 5000);
+			}
+			function setChanges() { // Change the icon out to my number
+				document.getElementById('num').className = ''; // Remove the contact icon
+				document.getElementById('num').innerHTML = ' 94263687';
+			}
+			function reset() { // Resets back to original layout
+				document.getElementById('num').className = 'far fa-address-card'; // Add the contact icon back
+				document.getElementById('num').innerHTML = ' Contact';
+			}
+		" style='font-size: 1.8em; font-weight: 200;'> Contact</a><br><br>
+		<a href="https://github.com/Jaimeloeuf" class='fab fa-github' style='font-size: 1.9em; font-weight: 200;'> GitHub</a><br><br>
+		<a href="mailto:jaimeloeuf@gmail.com" class='fas fa-envelope' id="email" onclick="
+			document.getElementById('email').className = ''; // Remove the email icon
+			document.getElementById('email').style.fontSize = '1.1em';
+			document.getElementById('email').innerHTML='jaimeloeuf@gmail.com';
+		" style='font-size: 2em; font-weight: 200;'> Email</a>
+	</div>
+
+	<div id="projects" class="projects">
+		<pre>
+		Some projects that I have done:
+		- <a href="#">This website you are seeing is fully built by me.</a>
+		- <a href="#" target="_blank">Pure Node JS Server Framework</a>
+		- <a href="#" target="_blank">GDP Analytics App in C</a>
+		- <a href="#" target="_blank">Competitve C/C++ Programming for UVA Judge</a>
+		- <a href="#" target="_blank">Java 'Movie Booking' GUI Application.</a>
+		- <a href="#" target="_blank">Competitve Python Programming code</a>
+		- <a href="#" target="_blank">Fan controller</a>
+		</pre>
+	</div>
+
+	<div id="projects" class="proj-details">
+		<pre>
+		<span style="font-weight: bold;">This website</span>  <a href="https://github.com/Jaimeloeuf/Jaimeloeuf.github.io">Source Code</a>
+			- Full website build using responsive web design.
+			- CSS Grid
+			- Hosted by Github.
+		
+		<span style="font-weight: bold;">Pure Node JS Server Framework</span>  <a href="https://github.com/Jaimeloeuf/Pure-Node.JS-API-Server">Source Code</a>
+			- Pure Node JS framework
+			- 
+		
+		<span style="font-weight: bold;">GDP Analytics App in C</span>  <a href="https://github.com/Jaimeloeuf/GDP-analytics">Source Code</a>
+			- 
+			- 
+		
+		<span style="font-weight: bold;">Competitve C/C++ Programming for UVA Judge</span>  <a href="https://github.com/Jaimeloeuf/UVA-Judge-problems">Source Code</a>
+			- 
+			- 
+
+		<span style="font-weight: bold;">Java 'Movie Booking' GUI Application.</span>  <a href="https://github.com/Jaimeloeuf/Movie-Booking-App">Source Code</a>
+			- 
+			- 
+		
+		<span style="font-weight: bold;">Competitve Python Programming code</span>  <a href="https://github.com/Jaimeloeuf/pythonmorsels">Source Code</a>
+			- 
+			-
+
+		<span style="font-weight: bold;">Fan controller</span>  <a href="">Source Code</a>
+			- 
+			-
+		</pre>
+	</div>
+
+	<footer class="footer">
+		<pre style="font-weight: bold;">
+		<!-- Fix the fond weight, make the color darker but not too bold and thick -->
+		<a href="#top">Back to Top ^</a>
+		&copy;JaimeLoeuf
+		&copy;JJ	2018
+		</pre>
+	</footer>
+</body>
+
+</html>
