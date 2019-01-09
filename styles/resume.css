@@ -17,11 +17,11 @@ a, a:link, a:visited, a:hover, a:active {
 .grid-container {
 	display: grid;
 	grid-template-columns: repeat(3, auto);
-	/* 1fr 4fr 1fr; */
-	grid-template-rows: repeat(8, auto);
+	grid-template-rows: repeat(9, auto);
 	grid-template-areas:
 		". title ."
 		"pic nav-bar contact-me"
+		"pic content-list contact-me"
 		"pic work-exp contact-me"
 		"pic acadaemics contact-me"
 		"pic awards contact-me"
@@ -57,13 +57,14 @@ img {
 	overflow: initial;
 }
 
-.work-experiences { grid-area: work-exp; }
-.acadaemics { grid-area: acadaemics; }
-.awards { grid-area: awards; }
-.skill-set { grid-area: skill-set; }
-.projects { grid-area: projects; }
+#content-list { grid-area: content-list; }
+#work-experiences { grid-area: work-exp; }
+#acadaemics { grid-area: acadaemics; }
+#awards { grid-area: awards; }
+#skill-set { grid-area: skill-set; }
+#projects { grid-area: projects; }
 
-.projects > a {
+#projects > a {
 	color: #bbb; /* Change the color to a darker shade */
 }
 
@@ -82,8 +83,11 @@ img {
 		grid-template-areas:
 			"title ."
 			"nav-bar contact-me"
-			"about-me contact-me"
-			"skill-set pic"
+			"content-list contact-me"
+			"work-exp pic"
+			"acadaemics ."
+			"awards ."
+			"skill-set ."
 			"projects ."
 			"footer .";
 	}
