@@ -14,19 +14,17 @@
 </head>
 
 <body id="top" class="grid-container">
-	<h3 class="title">Hi there! Welcome to my portfolio!</h3>
+	<h3 class="title">My personal details / lyfe!</h3>
 
-	<!-- Projects page will be all the projects in detailed. Unlike the home page which skims thru -->
-	<!-- Perhaps use alternating colors to block out the nav bar -->
 	<div class="nav-bar">
-		<a href="#">Home</a>
-		<a href="/about.html">About</a>
+		<a href="/index.html">Home</a>
+		<a href="#">About</a>
 		<a href="/resume.html">Resume/Skill-set</a>
 		<a href="#projects">Projects</a>
 		<a href="#">Contact Me</a>
 	</div>
 
-	<img src="imgs/profile.png" alt="Me!">
+	<img src="imgs/profile.png" alt="Me!" href="/">
 
 	<div class="contact-me">
 		<a href="#" class='far fa-address-card' id="num" onclick="
@@ -44,153 +42,93 @@
 				document.getElementById('num').className = 'far fa-address-card'; // Add the contact icon back
 				document.getElementById('num').innerHTML = ' Contact';
 			}
-		" style='font-size: 1.8em; font-weight: 200;'> Contact</a><br><br>
+		"
+		 style='font-size: 1.8em; font-weight: 200;'> Contact</a><br><br>
 		<a href="https://github.com/Jaimeloeuf" class='fab fa-github' style='font-size: 1.9em; font-weight: 200;'> GitHub</a><br><br>
 		<a href="mailto:jaimeloeuf@gmail.com" class='fas fa-envelope' id="email" onclick="
 			document.getElementById('email').className = ''; // Remove the email icon
 			document.getElementById('email').style.fontSize = '1.1em';
 			document.getElementById('email').innerHTML='jaimeloeuf@gmail.com';
-		" style='font-size: 2em; font-weight: 200;'> Email</a>
+		"
+		 style='font-size: 2em; font-weight: 200;'> Email</a>
 	</div>
 
-	<div class="about-me" style="text-align: center;">
-		Graduated from Dunman Secondary School in 2016<br>
-		Currently studying at <a href="https://www.tp.edu.sg/" target="_blank">Temasek Polytechnic Singapore</a><br>
-		I love to study interesting stuff and like to tinker with tech I learn!<br>
-		Always involved in lots of projects and competitions/hackathons!<br>
-	</div>
 
-	<div class="skill-set">
+	<!-- Add my personal stuff like stories blog? Insta and stuff also can -->
+	<div class="about-me">
 		<pre>
-			<span style="font-weight: bold;">General Tool Chain knowledge:</span>
-				- Comfortable with pure CLI systems and toolchains.
-				- git version control. View my <a href="https://github.com/Jaimeloeuf">Github account</a>.
-				- gcc/g++ (Optimization and custom usages)
-				- make tool (Building from source)
-				- Embedded Systems toolchains like the GNU toolchain.
-				- Comfortable with using NI's LabView software for Graphical
-				  Programming of Data Aquisition Devices.
-				- Working knowledge of networking technologies and usage.
+			Hello there and welcome to my portfolio website!
+			Graduated from Dunman Secondary School in 2016
+			Currently studying at <a href="https://www.tp.edu.sg/" target="_blank">Temasek Polytechnic Singapore</a>
+			I love to study interesting stuff and like to tinker with tech I learn!
+			Always involved in lots of projects and competitions/hackathons!
+
+			<span style="font-weight: bold;">My Story?  :)</span>
+				- I was born and raised in Singapore in a Chinese family.
+				- As part of the curriculum of the secondary school that I went to, we were required to
+				  read a book everyday for 20mins in the morning, and this was what started me on my journey.
+				- My interest in electronics begin when I read a book (I forgot what was the book's title)
+				  and it talked about the foxhole radio and the line, "the foxhole radio does not need any
+				  power to operate", that really got my interest. I was really amazed at the concept of
+				  wireless power/data transmission and started to learn more about radios by reading up on
+				  them. If you know, as foxhole radio is a radio that does not need any power to operate,
+				  because it operates entirely off the power of the radio waves in the air. That amazed me
+				  because I never heard of something that is entirely wirelessly powered before. I decided
+				  to try and build my very own foxhole radio and through that process my interest in
+				  electronics grew and I started to delve deeper into it and started learning about arduino
+				  as my first microcontroller.
+				- Found my mentor online, at that time he was a undergrad from NUS doing a <a href="http://www.nus.edu.sg/nusbulletin/other-multidisciplinaryspecial-programmes/double-degree-programmes/double-degree-in-computer-science-and-mathematics-applied-mathematics/">degree</a> in
+				  Computer Science and Math. Started learning C programming from him and started delving
+				  into competitve programming with the UVA online judge.
+				- Since then I have been constantly learning more about programming and electronics and
+				  started doing interesting DIY <a href="/projects.html">projects</a> on my own.
+
+			<span style="font-weight: bold;">Tech and tech stack I am currently working on</span>
+				- Backend Web developement in NodeJS and backend systems architecture.
+				- Building and migrating towards scalable systems combining Events with Microservices
+				  architecture using Kafka for my WebApps.
+				- Application Optimization for embedded system applications
+
+			<span style="font-weight: bold;">Tech that I am interested to learn and work with</span>
+				- Distributed systems
+				- Systems architecture design, esp. distributed computing systems.
+				- Future of backend web developement like Go, gRPC, HTTP/2  streaming tech.
+				- Stream/event based programming/software-design
+				- Asynchronous Software
+				- Resource scheduling on embedded devices as part of my project to create my own Bootloader
+				  or Basic OS for different microcontrollers.
 			
-			<span style="font-weight: bolder;">Programming Knowledge</span>
-			<span style="font-weight: bold;">C, C++ and especially familiar with embedded C programming:</span>
-				- Did many years of Competitve C/C++ Programming for UVA Judge,
-				  with focus on Data Structure based and Algorthimic questions.
-				- Experienced with building Libraries for collaborative work in C/C++.
-				- Familiar with Data processing and Heap Memory manipulation
-				  with C (Optimization for Embedded devices)
-				- Experienced with Embeddded device programming and familiar with
-				  toolchains such as gcc/g++, CMake, Atmel Studio, MPLAB IDE,
-				  Arduino and other Cross Compiling technologies / techniques.
-				- General speaking, I am familiar and comfortable with using the
-				  GNU and LLVM toolchain for C & C++ developement.
-			
-			<span style="font-weight: bold;">FullStack Web developement Experiences</span>
-			<span style="font-weight: bold;">Frontend:</span>
-				- Experiences with many implementation of front end work using
-				  the latest RWD technologies and techniques such as CSS grid,
-				  which is also used on this site.
-				- Working understanding of React.JS
-				- Most of my websites like this website is built entirely from
-				  scratch without any framework with Web Standards like
-				  Web Components, CSS Grids, Shadow Dom and more.
-				- Basic working understanding of BootStrap usage.
+			^ Learn more about what I am working on through my portfolio <a href="/resume.html">here</a>.
 
-			<span style="font-weight: bold;">Backend:</span>
-				- Pure Node JS server developement without using any
-				  frameworks like Express.JS, Hapi.JS or Sails.JS
-					= Created many web services before, I am also currently developing
-					  a Web App for my own startup with the Full Stack done by myself.
-					= Experienced with Server Side Rendering/Rendered (SSR) content
-					= Experienced with Server deployment and architect designs
-					= Experienced with building custom made Security Systems.
-						= Use of JWT / BCrypt / OAuth and OpenID
-					= Integration with NGINX as reverse proxy and load balancer
-				- Although most of my Web Services' backend is build with vanilla Node.JS,
-				  I am also familiar with using Frameworks such as Express.JS and
-				  Koa.JS (With ES6 Generators and interators / async/await).
-				- Familiar with Univeral Rendering and design patterns
-				  of Isomorphic or Universally Rendered WebApps.
-				- Created a custom implementation of a middleware library.
-					= Experienced with implementing Middleware design/flow-controls.
-					= Experienced with API Adapter design implementation.
-					= Lib used for data sanitization/filtering for data analytics
-					= middelware for HTTP req/res objects for my Pure Node JS server
-				- python server developement with Flask framework
-				 <i style="font-size: 85%;">* All of my backend Web Services and Web Apps are built with the <span style="font-weight: bold;">Microservice</span>
-					<span style="font-weight: bold;">Architecture</span> and design patterns with emphasis on Scaling and Optimizations.</i>
-				- Working knowledge of LAMPP / XAMPP / WAMP stack.
 
-			<span style="font-weight: bold;">Java:</span>
-				- Strong knowledge in OOP design and modeling.
-				- Familiar with ORM technique.
-				- Familiar with JVM theory and concepts.
-				- Familiar with use of JVM with other runtime languages such
-				  as Kotlin and Scala. Kotlin for Android dev too.
+			<!-- Perhaps for the below portions, I should publish all these articles to github-->
+			<!-- In the guthub for the review thing, remember to add in the name of the book and the ISBN -->
+			<span style="font-weight: bold;">Below are some of the articles and other stuff I am working on</span>
+				<span style="font-weight: bold;">Book summary / review</span>
+				- <a href="#">The Business Book</a>
 
-			<span style="font-weight: bold;">Other Native related technologies:</span>
-				- Working knowledge of Electron JS technology and usage.
-				- React JS experiences that can help me in future endeavours with
-				  React Native when required
-				- Java Swing GUI library for Desktop App developement.
-				- Brief exposure to Android developement
+				<span style="font-weight: bold;">My Recommended Books List</span>  (Note that it is randomly ordered)
+				- <a href="#">The criminal biology</a>
+					- A book on the relationship between crime and biology.
+					- A book that talks about some uncomfortable yet scientifically provable ideas.
+					- Really helped me change me view of the world by alot.
+					- Can be quite a shocking book for some people as the information presented
+					  may not always be put in a nice way or politically correct. A really nice straight
+					  forward book writing style that I think quite alot of people can appreciate.
+				- <a href="#">The Business Book</a>
+					- On basic building ideas of business and management skills.
+					- Great book to learn about many new topics, as they are all catergorised into
+					  neat little chunks of info with examples.
+				- <a href="#">The liberal investing</a>
+					- On investing and liberal arts.
+					- It talks about how investing is similiar to the other processes in the world
+					  and how learning more things in all areas and fields can help you gain more
+					  insights in all aspects of your life and become a better investor.
+				- <a href="#">F.U Money</a>
+					- Life changing book on the success mindset by Dan Lok.
 
-			<span style="font-weight: bold;">Python:</span>
-				- Working knowledge of Python
-				- Working experience of using Python as backend web server with Flask
-				- Did some competitve programming in Python before, with focus
-				  on optimizations and clean API.
-				  View the above in my Github <a href="https://github.com/Jaimeloeuf/pythonmorsels">repo</a>.
-			
-			<span style="font-weight: bold;">AI Related</span>
-				Working knowledge on Machine Learning and Deep Learning
-				with tools like Tensorflow and Tensorflow JS.
-				Participated in Microsoft Imagine Cup 2019 with a project
-				focused heavily on image recognition and classification
-				with custom built algorthims and neural networks.
-			
-			<span style="font-weight: bold;">Security</span>
-				Experiences with security implementations in the Web Dev field.
-				Basic understanding of ethical hacking and some experiences with
-				tools in Kali Linux such as Metasploit/Armitage and NMap/Zenmap.
-				Basic experiences with hardware reverse engineering.
-
-			<span style="font-weight: bold;">Others:</span>
-				Database Design and usage:
-					- Some experiences with mySQL and Relational Databases
-					- Some experiences with NoSQL using MongoDB
-					- Basic experiences with GraphQL
-				Familiar and comfortable with many programming paradigms:
-					- Procedual programming (C/C++ and Embedded Devices)
-					- Object Oriented Programming (JavaScript / C++ / Java / Python)
-					- Funtional Programming (JavaScript)
-					- Basic understanding of Reactive Programming with RxJS
-				
-			<span style="font-weight: bold;">Electronics:</span>
-				- Familiar with using most lab equipments such as
-				  analog/digital oscilloscopes.
-				- Specialise in mixed circuit designs and logic controllers.
-				- Familiar with Power supply design and Signal Conditioning
-				  techniques and circuit design.
-				- Familiar with Amplifier designs and really interested
-				  in these, I have a project based on this as well
-				  where I designed and created my own Speaker Amp.
-				- Basic knowledge of FPGAs.
-		</pre>
-	</div>
-
-	<div id="projects" class="projects">
-		<pre>
-		Some projects that I have done:
-		- <a href="#top">This website you are seeing is fully built by me.</a>
-		- <a href="https://github.com/Jaimeloeuf/Pure-Node.JS-API-Server" target="_blank">Pure Node JS Server Framework</a>
-		- <a href="https://github.com/Jaimeloeuf/GDP-analytics" target="_blank">GDP Analytics App in C</a>
-		- <a href="https://github.com/Jaimeloeuf/UVA-Judge-problems" target="_blank">Competitve C/C++ Programming for UVA Judge</a>
-		- <a href="https://github.com/Jaimeloeuf/Movie-Booking-App" target="_blank">Java 'Movie Booking' GUI Application.</a>
-		- <a href="https://github.com/Jaimeloeuf/pythonmorsels" target="_blank">Competitve Python Programming code</a>
-		- <a href="#" target="">Fan controller</a>
-
-		^ View more details on this <a href="/projects.html">here</a>.
+				<span style="font-weight: bold;">Video reports</span>
+				- <a href="#">How to remember what you learned</a>
 		</pre>
 	</div>
 

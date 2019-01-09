@@ -24,8 +24,8 @@ a, a:link, a:visited, a:hover, a:active {
 		". title ."
 		"pic nav-bar contact-me"
 		"pic about-me contact-me"
-		"pic skill-set contact-me"
-		". projects ."
+		"pic about-me contact-me"
+		". about-me ."
 		". footer .";
 }
 
@@ -61,13 +61,6 @@ img {
 	margin-top: 0.5em;
 }
 
-.skill-set { grid-area: skill-set; }
-.projects { grid-area: projects; }
-
-.projects > a {
-	color: #bbb; /* Change the color to a darker shade */
-}
-
 .footer {
 	grid-area: footer;
 	margin-left: 3em;
@@ -83,8 +76,8 @@ img {
 			"title ."
 			"nav-bar contact-me"
 			"about-me contact-me"
-			"skill-set pic"
-			"projects ."
+			"about-me pic"
+			"about-me ."
 			"footer .";
 	}
 }
@@ -98,15 +91,6 @@ img {
 		"title"
 		"nav-bar"
 		"about-me"
-		"skill-set"
-		"projects"
 		"footer";
 	}
 }
-
-/* 
-background:
-	linear-gradient(140deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.07) 43%, transparent 44%, transparent 100%),
-	linear-gradient(105deg, transparent 0%, transparent 40%, rgba(0, 0, 0, 0.06) 41%, rgba(0, 0, 0, 0.07) 76%, transparent 77%, transparent 100%),
-	linear-gradient(to right, #d89ca4, #e27b7e);
-	background-color: #de7e85; */
