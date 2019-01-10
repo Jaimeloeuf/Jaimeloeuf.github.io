@@ -71,7 +71,7 @@ img {
 
 .footer {
 	grid-area: footer;
-	margin-left: 3em;
+	margin-left: 2em;
 }
 
 /* Overwrite all changes that you dont want! */

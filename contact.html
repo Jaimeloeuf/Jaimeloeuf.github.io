@@ -14,7 +14,7 @@
 	 crossorigin='anonymous'>
 </head>
 
-<body id="top" class="grid-container">
+<body class="grid-container">
 	<h3 class="title">Hi I'm JJ and here's some stuff about me lyfe!</h3>
 
 	<div class="nav-bar">
@@ -32,21 +32,21 @@
 		</div>
 
 		<div class="contacts">
-			<a href="#" class='fa fa-address-card contact' id="num" onclick="
+			<a href="#" class='far fa-address-card contact' id="num" onclick="
 			if (document.getElementById('num').innerHTML === ' 94263687')
 				reset();
 			else {
 				setChanges();
-				setTimeout(() => reset(), 5000);
+				setTimeout(reset, 5000);
 			}
 			function setChanges() { // Change the icon out to my number
-				document.getElementById('num').className = ''; // Remove the contact icon
+				document.getElementById('num').className = 'contact'; // Remove the contact icon
 				document.getElementById('num').innerHTML = ' 94263687';
 			}
 			function reset() { // Resets back to original layout
-				document.getElementById('num').className = 'far fa-address-card'; // Add the contact icon back
+				document.getElementById('num').className = 'far fa-address-card contact'; // Add the contact icon back
 				document.getElementById('num').innerHTML = ' Contact';}"> Contact</a><br>
-			<a href="mailto:jaimeloeuf@gmail.com" class='fa fa-envelope contact'> &nbsp;Email</a><br>
+			<a href="mailto:jaimeloeuf@gmail.com" class='far fa-envelope contact'> &nbsp;Email</a><br>
 			<a href="https://github.com/Jaimeloeuf" class='fab fa-github contact'> &nbsp;Github</a><br>
 			<a href="https://www.instagram.com/justwannaberichasf/" class='fab fa-instagram contact'> Instagram</a>
 		</div>
@@ -56,8 +56,6 @@
 
 	<footer class="footer">
 		<pre style="font-weight: bold;">
-		<!-- Fix the fond weight, make the color darker but not too bold and thick -->
-		<a href="#top">Back to Top ^</a>
 		&copy;JaimeLoeuf
 		&copy;JJ	2018
 		</pre>
