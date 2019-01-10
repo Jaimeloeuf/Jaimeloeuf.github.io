@@ -19,8 +19,8 @@ a, a:link, a:visited, a:hover, a:active {
 	grid-template-columns: repeat(2, auto);
 	grid-template-rows: repeat(4, auto);
 	grid-template-areas:
-		"title ."
-		"nav-bar pic"
+		"title title"
+		"nav-bar nav-bar"
 		"contact-me pic"
 		"footer pic";
 }
@@ -28,28 +28,25 @@ a, a:link, a:visited, a:hover, a:active {
 .title {
 	font-size: 1.6em;
 	grid-area: title;
-	margin: auto;
-	margin-top: 2.4em;
-	margin-bottom: 0.5em;
+	margin: 2.4em 1em 0.5em;
 	color: #f46bb1;
 }
 
 .nav-bar {
 	grid-area: nav-bar;
-	margin: auto;
-	margin-top: 0px;
+	margin: 0em 1.6em; /* 1.6em to align with that title that has a 1.6em font size */
 	overflow: initial;
 }
 
 .contact-me { 
 	grid-area: contact-me;
+	margin: 0em 1.6em; /* 1.6em to align with that title that has a 1.6em font size */
 	margin-bottom: 2em;
 
 	display: grid;
 	grid-template-columns: repeat(2, auto);
 	grid-template-rows: auto;
-	grid-template-areas:
-		"about-me contacts"
+	grid-template-areas: "about-me contacts";
 }
 
 .about-me { grid-area: about-me; }
@@ -60,7 +57,6 @@ a, a:link, a:visited, a:hover, a:active {
 .contact {
 	font-size: 1.8em;
 	padding-top: 0.2em;
-	justify-items: center;
 }
 
 img {
@@ -71,18 +67,37 @@ img {
 
 .footer {
 	grid-area: footer;
-	margin-left: 2em;
+	margin-left: 1em;
 }
 
 /* Overwrite all changes that you dont want! */
 @media screen and (max-width: 58em) {
-	/* Hide image and contact-me icons. Resize to 1 column */
-	img, .contact-me { display: none; }
+	/* Resize to 1 column */
+	.contact-me {
+		grid-template-columns: auto;
+		grid-template-rows: repeat(2, auto);
+		grid-template-areas:
+			"about-me"
+			"contacts";
+	}
+}
+
+/* Overwrite all changes that you dont want! */
+@media screen and (max-width: 35em) {
+	/* Resize to 1 column */
 	.grid-container {
 		grid-template-columns: auto;
+		grid-template-rows: repeat(5, auto);
 		grid-template-areas:
 		"title"
-		""
+		"nav-bar"
+		"contact-me"
+		"pic"
 		"footer";
+	}
+	img {
+		max-width: 90%;
+		max-height: 100%;
+		margin: 0em 2em;
 	}
 }
