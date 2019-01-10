@@ -16,12 +16,14 @@ a, a:link, a:visited, a:hover, a:active {
 
 .grid-container {
 	display: grid;
-	grid-template-columns: repeat(3, auto);
-	grid-template-rows: repeat(9, auto);
+	grid-template-columns: repeat(2, auto);
+	grid-template-rows: repeat(6, auto);
 	grid-template-areas:
-		". title ."
-		"pic skill-set contact-me"
-		". footer .";
+		"title ."
+		"nav-bar pic"
+		"about-me pic"
+		"contact-me pic"
+		"footer .";
 }
 
 .title {
@@ -33,17 +35,6 @@ a, a:link, a:visited, a:hover, a:active {
 	color: #f46bb1;
 }
 
-img {
-	grid-area: pic;
-	max-width: 4.5cm;
-    max-height: 100%;
-}
-
-.contact-me { 
-	grid-area: contact-me;
-	margin-bottom: 2em;
-}
-
 .nav-bar {
 	grid-area: nav-bar;
 	margin: auto;
@@ -51,7 +42,28 @@ img {
 	overflow: initial;
 }
 
-#content-list { grid-area: content-list; }
+.about-me { grid-area: about-me; }
+
+.contact-me { 
+	grid-area: contact-me;
+	margin-bottom: 2em;
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+	grid-template-rows: repeat(6, auto);
+	grid-template-areas:
+		"title ."
+		"nav-bar pic"
+		"about-me pic"
+		"contact-me pic"
+		"footer .";
+}
+
+
+img {
+	grid-area: pic;
+	max-width: 4.5cm;
+    max-height: 100%;
+}
 
 .footer {
 	grid-area: footer;
@@ -59,22 +71,6 @@ img {
 }
 
 /* Overwrite all changes that you dont want! */
-@media screen and (max-width: 70em) {
-	/* Resize image and Resize to 2 columns */
-	img { max-width: 60%; }
-	.grid-container {
-		/* grid-template-columns: 1fr 3fr; */
-		grid-template-columns: auto auto;
-		grid-template-areas:
-			"title ."
-			"nav-bar contact-me"
-			". contact-me"
-			". pic"
-			". pic"
-			"footer .";
-	}
-}
-
 @media screen and (max-width: 58em) {
 	/* Hide image and contact-me icons. Resize to 1 column */
 	img, .contact-me { display: none; }
