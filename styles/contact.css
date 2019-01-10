@@ -17,13 +17,12 @@ a, a:link, a:visited, a:hover, a:active {
 .grid-container {
 	display: grid;
 	grid-template-columns: repeat(2, auto);
-	grid-template-rows: repeat(6, auto);
+	grid-template-rows: repeat(4, auto);
 	grid-template-areas:
 		"title ."
 		"nav-bar pic"
-		"about-me pic"
 		"contact-me pic"
-		"footer .";
+		"footer pic";
 }
 
 .title {
@@ -42,22 +41,27 @@ a, a:link, a:visited, a:hover, a:active {
 	overflow: initial;
 }
 
-.about-me { grid-area: about-me; }
-
 .contact-me { 
 	grid-area: contact-me;
 	margin-bottom: 2em;
+
 	display: grid;
 	grid-template-columns: repeat(2, auto);
-	grid-template-rows: repeat(6, auto);
+	grid-template-rows: auto;
 	grid-template-areas:
-		"title ."
-		"nav-bar pic"
-		"about-me pic"
-		"contact-me pic"
-		"footer .";
+		"about-me contacts"
 }
 
+.about-me { grid-area: about-me; }
+.contacts {
+	grid-area: contacts;
+	margin-top: 1em;
+}
+.contact {
+	font-size: 1.8em;
+	padding-top: 0.2em;
+	justify-items: center;
+}
 
 img {
 	grid-area: pic;
